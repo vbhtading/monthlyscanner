@@ -1,5 +1,3 @@
-# monthlyscanner
-
 # FreshBuy — NSE Monthly Supertrend Fresh Buy Scanner
 
 Professional Next.js scanner for NSE India stocks on **monthly timeframe**.
@@ -44,19 +42,9 @@ Then click the big green **SCAN ALL STOCKS** button.
 
 Full scan of 250+ stocks takes roughly 2–4 minutes (4 concurrent requests, heavy 9-year monthly history per stock).
 
-## Deploy to Vercel
-
-This project is set up for easy deployment to Vercel:
-
-1. Import the GitHub repo `vbhtading/monthlyscanner` in the Vercel dashboard.
-2. It auto-detects as a Next.js project.
-3. Deploy!
-
-The production build uses the standard `next build`.
-
 ## Data
 
-- Yahoo Finance monthly (1mo) interval (with daily aggregation for accurate monthly OHLC highs/lows)
+- Yahoo Finance monthly (1mo) interval
 - Supertrend (9, 2) with Wilder's ATR
 - Current price prefers live quote for accuracy
 - In-memory cache (6 min)
