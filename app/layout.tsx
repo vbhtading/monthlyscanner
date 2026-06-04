@@ -16,9 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FreshBuy | NSE Monthly Supertrend Breakout Scanner",
   description: "NSE India monthly scanner. Fresh Buy signals when current month close > previous month high AND price above Supertrend (9,2). Includes volume analysis. Data via Yahoo Finance.",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
