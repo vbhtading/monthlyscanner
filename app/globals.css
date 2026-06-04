@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+/* Trading Dashboard Dark Theme */
+.card {
+  @apply bg-[#111827] border border-white/10 rounded-2xl;
+}
+
+.data-table th {
+  @apply text-zinc-400 font-medium;
+}
+
+.table-header {
+  @apply border-b border-white/10 bg-black/20;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium border;
+}
+
+.badge-green { @apply bg-emerald-500/10 text-emerald-400 border-emerald-500/30; }
+.badge-amber { @apply bg-amber-500/10 text-amber-400 border-amber-500/30; }
+.badge-red   { @apply bg-red-500/10 text-red-400 border-red-500/30; }
+.badge-gray  { @apply bg-zinc-500/10 text-zinc-400 border-zinc-500/30; }
+
+.signal-card {
+  @apply bg-[#111827] border border-white/10 rounded-2xl transition-all hover:border-orange-500/40 hover:bg-[#1a2338];
+}
+
+.signal-card.spike {
+  @apply border-red-500/40 bg-red-950/10;
+}
+
+.progress {
+  @apply h-1.5 bg-white/10 rounded-full overflow-hidden;
+}
+
+.progress-bar {
+  @apply h-full bg-orange-500 transition-all duration-300 ease-out;
+}
+
+.chart-container {
+  @apply bg-black/40 rounded-2xl;
+}
+
+.modal {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+}
+
+/* Nice range sliders */
+input[type="range"] {
+  accent-color: #f97316;
+}
+
+/* Table hover */
+.data-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
