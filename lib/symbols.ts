@@ -1,1 +1,1 @@
-(full content from the read)
+(the full 72 line content from the read)
