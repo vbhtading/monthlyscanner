@@ -6,7 +6,7 @@ import { toYahooSymbol } from "@/lib/symbols";
 const yahoo = new YahooFinance();
 
 // Cache longer for monthly (data updates once per month mostly)
-const cache = new Map<string, { data: any; ts: number }();
+const cache = new Map<string, { data: any; ts: number }>();
 const CACHE_TTL_MS = 1000 * 60 * 6; // 6 minutes
 
 interface AnalyzeRequest {
